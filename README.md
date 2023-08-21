@@ -16,7 +16,10 @@ Members want to be able to see Visits and attendance inside the profile screen
 # Task 2 - Complete the form! - 45min
 
 Setup the environment together with the team member.
-
+```
+npm install
+npm start
+```
 
 Goal:
 ```
