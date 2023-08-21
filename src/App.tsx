@@ -40,13 +40,15 @@ function isTrainer(x: Staff): x is Trainer {
 const config = {
   name: {
     id: 'name',
+    name: 'name',
     type: 'email',
     minLength: 1,
     maxLength: 10,
     required: true,
   },
   email: {
-    id: 'emailz',
+    id: 'email',
+    name: 'email',
     type: 'email',
     minLength: 5,
     maxLength: 100,
@@ -54,12 +56,15 @@ const config = {
   },
   dateTime: {
     id: 'dateTime',
+    name: 'dateTime',
     type: 'datetime-local',
     min: '1900-01-01',
     max: '2005-31-12',
     required: true,
   },
   trainer: {
+    id: 'trainer',
+    name: 'trainer',
     type: 'select',
     options: [/* fetch */],
     required: true,
@@ -79,13 +84,13 @@ function App() {
       </header>
       <main className="appmain">
         <form onSubmit={onSubmit}>
-          <input {...config.name} />
+          <input id='name' name='name' />
           <label className="field">
             Email:
-            <input {...config.email} />
+            <input id='email' name='email' />
           </label>
-          <input {...config.dateTime} type="datetime-local" />
-          <input {...config.trainer} />
+          <input  id='dateTime' type="datetime-local" />
+          <input  id='trainer' name='trainer' />
           <input type="submit" />
         </form>
       </main>
