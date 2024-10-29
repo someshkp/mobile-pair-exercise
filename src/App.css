@@ -6,23 +6,24 @@
 }
 
 .ApP--logo {
-  height: 8vh;
+  height: 12vh;
+  width: 15vh;
   pointer-events: none;
+  padding: "5px";
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .ApP--logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .app__header {
-  background-color: #EB836D;
+  background-color: #4375da;
   min-height: 12vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   font-size: calc(10px + 2vmin);
   color: white;
   flex: 0;
@@ -42,7 +43,20 @@
 }
 
 .appmain {
-  background: #383490;
+  background: rgb(234, 234, 237);
   flex: 1;
+  height: 100vh;
   padding: 2vh 33vw;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  border: 1px solid #aeb0b4;
+  border-radius: 2px;
+  align-items: center;
 }
